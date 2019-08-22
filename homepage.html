@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bell</title>
+<link rel="stylesheet" type="text/css" href="file:///Users/kellyrita/Documents/design.css">
+<script src="file:///Users/kellyrita/Documents/tabs.js"></script>
+  </head>
+<body>
+  <center><img src="file:///Users/kellyrita/Downloads/bell2.png" alt="bell logo" width="652" height="336" border="0"/></center>
+  <!-- Tab links -->
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')" >Home</button>
+  <button class="tablinks" onclick="openCity(event, 'My Info')"><a href="file:///Users/kellyrita/Documents/info.html">My Info</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Helping Hands')" ><a href="file:///Users/kellyrita/Documents/helping.html">Helping Hands</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Meals on Wheels')" ><a href="file:///Users/kellyrita/Documents/meals_wheels.html">Meals on Wheels</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Prescriptions and Appts')"><a href="file:///Users/kellyrita/Documents/appt.html">Prescriptions and Appts</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Get Involved')" ><a href="file:///Users/kellyrita/Documents/get_involved.html">Get Involved</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Connect With Others!')"><a href="file:///Users/kellyrita/Documents/connect.html">Connect With Others!</a></button>
+</div>
+
+<br />
+<br />
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <center><img src="file:///Users/kellyrita/Downloads/elderly-horizontal.jpg" alt="two elderly people" width="705" height="250" border="1" /></center>
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <center><img src="file:///Users/kellyrita/Downloads/eld.jpg" alt="a young woman taking care of a senior citizen" width="1000" height="400" border="1"/></center>
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <center><img src="file:///Users/kellyrita/Downloads/hands.jpg" alt="holding hands" width="685" height="350" border="1"/></center>
+      <div class="text"></div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3500); // Change image every 2 seconds
+}
+</script>
+  <center><p>Welcome to Bell! Our team has collected helpful resources and information to create an easy environment
+    for you to navigate through. Our website is targeted at providing reminders and resources to the elderly.
+    Here, you can monitor and schedule your appointments and prescriptions. You can get involved in your community
+    and connect with others all with a few clicks!
+  </p></center>
+
+  <br />
+  <br />
+
+  <div class="row">
+  <div class="column"><h1 align="center">About Us</h1>
+    <center><p>Bell was created to help the elderly and make it easier for them to get involved in their
+       community, along with keeping track of their daily needs. By reminding them to take their medications,
+       providing them with our “Handy Helpers”, and supplying the dates and information needed to get involved
+       in their communities, we see significant improvement in their lives for the long run.</p></center>
+  </div>
+  <div class="column">
+    <center><img src="file:///Users/kellyrita/Downloads/peoples.jpeg" width="454" height="382" border="1" /></center>
+  </div>
+</div>
+
+<br />
+<br />
+
+
+  <h1 align="center">Need Help Navigating?</h1>
+  <div class="row">
+  <div class="column">
+    <br />
+    <br />
+    <center><p>Here is a video to help you familiarize yourself with how to navigate websites if you
+      are new to the Internet →</p></center>
+  </div>
+    <div class="column">
+    <iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/QdeTDdJqTNY" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+  <br />
+  <br />
+  <hr />
+
+<center><h1>Meet the Builders behind Bell!</h1></center>
+
+  <center><img src="file:///Users/kellyrita/Downloads/mario.png" /></center>
+
+  </body>
+</html>
